@@ -35,7 +35,7 @@ The dataset includes the next features (12 for prediction and DEATH_EVENT):
 
 During this first phase of the project I will be performing several data cleaning queries through MySQL, addressing missing values, outliers and inconsistencies. Now that the data is ready I will enhance the dataset with the creation of new features that will further improve the model and finally create a pipeline that connects this new dataset to Python so I can perform an EDA (Exploratory Data Analysis) to uncover patterns and relationships.
 
-Analyzing the dataset through visualization will help uncover patterns, trends, and correlations among the features. This step is critical for understanding the factores that contribute most significantly to heart failure mortality.
+Analyzing the dataset through visualization will help uncover patterns, trends, and correlations among the features. This step is critical for understanding the factors that contribute most significantly to heart failure mortality.
 
 ### Part 2: Machine Learning Model Development
 
