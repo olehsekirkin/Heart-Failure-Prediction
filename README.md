@@ -1,6 +1,10 @@
 # Heart-Failure-Prediction
 Data analysis and Machine Learning approach to Heart Failure Prediction.
 
+<p align="center">
+  <img src="https://i.imgur.com/UIZgVm3.png" alt="Title" width="660px" height="550px">
+</p>
+
 [LINK](https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data/data) to the dataset on Kaggle.
 
 ## Overview
