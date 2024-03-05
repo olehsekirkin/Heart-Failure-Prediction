@@ -37,6 +37,8 @@ During this first phase of the project I will be performing several data cleanin
 
 Analyzing the dataset through visualization will help uncover patterns, trends, and correlations among the features. This step is critical for understanding the factors that contribute most significantly to heart failure mortality.
 
+Once important questions have been solved thanks to the visuals, we can start building our Heart Failure Prediction Model, thanks to the use of a cloud platform like Snowflake. First of all we have to pipeline our current data from MySQL to the cloud, I we will use code within the same file as before.
+
 ### Part 2: Machine Learning Model Development
 
 WIP
