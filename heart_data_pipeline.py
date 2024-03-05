@@ -7,12 +7,11 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pymysql
 
-engine = create_engine('mysql+pymysql://SQLUSERNAME:SQLPASSWORD*@localhost:3306/heart_prediction')
+engine = create_engine('mysql+pymysql://USERNAME:PASSWORD*@localhost:3306/heart_prediction')
 
 heart_data = pd.read_sql_table('heart_data', engine)
 
 # Age Distribution plot
-
 hist_data = [heart_data['age'].values]
 group_labels = ['age']
 fig = ff.create_distplot(hist_data, group_labels)
@@ -20,13 +19,11 @@ fig.update_layout(title_text='Age Distribution plot')
 fig.show()
 
 # Gender wise Age Spread
-
 fig = px.box(heart_data, x='sex', y='age', points='all')
 fig.update_layout(title_text='Gender wise Age Spread - Male = 1 Female = 0')
 fig.show()
 
 # Analysis in Age on Survival Status
-
 surv = heart_data[heart_data['death_event']==0]['age']
 not_surv = heart_data[heart_data['death_event']==1]['age']
 hist_data = [surv, not_surv]
@@ -36,19 +33,16 @@ fig.update_layout(title_text='Analysis in Age on Survival Status')
 fig.show()
 
 # Analysis in Age and Gender on Survival Status
-
 fig = px.violin(heart_data, y='age', x='sex', color='death_event', box=True, points='all', hover_data=heart_data.columns)
 fig.update_layout(title_text='Analysis in Age and Gender on Survival Status')
 fig.show()
 
 # Analysis in age and smoking on survival status
-
 fig = px.violin(heart_data, y='age', x='smoking', color='death_event', box=True, points='all', hover_data=heart_data.columns)
 fig.update_layout(title_text='Analysis in Age and Smoking on Survival Status')
 fig.show()
 
 # Analysis on age and diabetes on survival status
-
 fig = px.violin(heart_data, y='age', x='diabetes', color='death_event', box=True, points='all', hover_data=heart_data.columns)
 fig.update_layout(title_text='Analysis in Age and Diabetes on Survival Status')
 fig.show()
@@ -91,3 +85,23 @@ fig.show()
 plt.figure(figsize=(10,10))
 sns.heatmap(heart_data.corr(), vmin=-1, cmap='coolwarm', annot=True)
 plt.show()
+
+# Snowflake pipeline
+
+import snowflake.connector
+from snowflake.connector.pandas_tools import write_pandas
+
+ctx = snowflake.connector.connect(
+    user='your-username',
+    password='password',
+    account='account-name',
+    warehouse='warehouse-name',
+    database='PIPELINE',
+    schema='HEARTDATA'
+)
+
+print("Connected to Snowflake")
+
+success, nchunks, nrows, _ = write_pandas(ctx, heart_data, 'heart_data_table')
+
+ctx.close()
