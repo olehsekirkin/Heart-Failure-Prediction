@@ -41,4 +41,8 @@ Once important questions have been solved thanks to the visuals, we can start bu
 
 ### Part 2: Machine Learning Model Development
 
+<p align="center">
+  <img src="https://backend.vlinkinfo.com/uploads/Snowflake_s_machine_learning_lifecycle_c31beb86b2.png" alt="Title" width="720px" height="375px">
+</p>
+
 WIP
