@@ -62,12 +62,12 @@ Gradient Boosting Machine (XGBoost) Accuracy: 85.00%
 Support Vector Machine Accuracy: 83.33%
 These results demonstrate the potential of Machine Learning in enhancing the prediction of heart failure mortality. The Random Forest Classifier emerged as the top-performing model, with an accuracy of 86.67%. This model's success can be attributed to its ability to handle the complexity and non-linearity within our dataset, providing a more nuanced understanding of the factors influencing heart failure mortality.
 
-### Discussion
+## Discussion
 The findings from this project underscore the importance of leveraging advanced analytics and machine learning in healthcare. By accurately predicting heart failure mortality, I can help healthcare professionals tailor interventions and management strategies to individual patient needs, ultimately improving patient outcomes.
 
 It is crucial to note that while the models show promising results, the deployment of such models in a clinical setting requires further validation and testing. Additionally, incorporating more patient data and potentially relevant features could further enhance model performance.
 
-### Future Work
+## Future Work
 Moving forward, I aim to:
 
 - Explore the incorporation of additional features that could improve model accuracy.
