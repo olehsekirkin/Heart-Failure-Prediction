@@ -2,7 +2,7 @@
 Data analysis and Machine Learning approach to Heart Failure Prediction.
 
 <p align="center">
-  <img src="https://i.imgur.com/XvaYr6Y.png" alt="Title" width="660px" height="550px">
+  <img src="https://i.imgur.com/XvaYr6Y.png" alt="Title" width="528px" height="440px">
 </p>
 
 [LINK](https://www.kaggle.com/datasets/andrewmvd/heart-failure-clinical-data/data) to the dataset on Kaggle.
@@ -41,8 +41,35 @@ Once important questions have been solved thanks to the visuals, we can start bu
 
 ### Part 2: Machine Learning Model Development
 
-<p align="center">
-  <img src="https://backend.vlinkinfo.com/uploads/Snowflake_s_machine_learning_lifecycle_c31beb86b2.png" alt="Title" width="720px" height="375px">
-</p>
+In this phase, I focus on applying various Machine Learning algorithms to predict mortality due to heart failure. My approach involves utilizing a combination of Logistic Regression, Random Forest Classifier, Support Vector Machine (SVM), and XGBoost models.
 
-WIP
+Each model is trained on a dataset processed to highlight features relevant to predicting heart failure outcomes. I perform feature scaling to ensure my models can interpret the data effectively, given the wide range of values across different features.
+
+The process involves:
+
+Data Preprocessing: Including feature scaling and splitting the dataset into training and testing sets.
+Model Training: Where each model is trained on the training set.
+Model Prediction: Utilizing the trained models to make predictions on the test set.
+Performance Evaluation: Assessing each model's accuracy to determine its effectiveness in predicting heart failure mortality.
+This rigorous approach allows me to compare the predictive power of each algorithm and select the most suitable model for deployment.
+
+### Part 3: Results and Discussion
+The evaluation of my models yielded the following accuracies:
+
+Logistic Regression Model Accuracy: 83.33%
+Random Forest Classifier Accuracy: 86.67%
+Gradient Boosting Machine (XGBoost) Accuracy: 85.00%
+Support Vector Machine Accuracy: 83.33%
+These results demonstrate the potential of Machine Learning in enhancing the prediction of heart failure mortality. The Random Forest Classifier emerged as the top-performing model, with an accuracy of 86.67%. This model's success can be attributed to its ability to handle the complexity and non-linearity within our dataset, providing a more nuanced understanding of the factors influencing heart failure mortality.
+
+### Discussion
+The findings from this project underscore the importance of leveraging advanced analytics and machine learning in healthcare. By accurately predicting heart failure mortality, I can help healthcare professionals tailor interventions and management strategies to individual patient needs, ultimately improving patient outcomes.
+
+It is crucial to note that while the models show promising results, the deployment of such models in a clinical setting requires further validation and testing. Additionally, incorporating more patient data and potentially relevant features could further enhance model performance.
+
+### Future Work
+Moving forward, I aim to:
+
+- Explore the incorporation of additional features that could improve model accuracy.
+- Implement more advanced machine learning techniques, such as deep learning, to assess their performance in predicting heart failure mortality.
+- Conduct a more extensive validation of my models using a larger and more diverse dataset to ensure their robustness and reliability in various clinical settings.
