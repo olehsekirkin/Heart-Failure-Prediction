@@ -1,3 +1,14 @@
+import numpy as np
+import pandas as pd
+import snowflake.connector
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
+import xgboost as xgb
+
 X = df.drop(['patient_id', 'death_event'], axis=1)  # Excluding 'patient_id'
 y = df['death_event']
 
@@ -15,7 +26,7 @@ log_reg_model.fit(X_train_scaled, y_train)
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_train_scaled, y_train)
 
-# Gradient Boosting Machine
+# Gradient Boosting Machine (XGBoost)
 xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss')
 xgb_model.fit(X_train_scaled, y_train)
 
@@ -33,7 +44,6 @@ accuracy_rf = accuracy_score(y_test, predictions_rf)
 accuracy_xgb = accuracy_score(y_test, predictions_xgb)
 accuracy_svm = accuracy_score(y_test, predictions_svm)
 
-# Print out accuracy for each model
 print(f"Logistic Regression Model Accuracy: {accuracy_log_reg}")
 print(f"Random Forest Classifier Accuracy: {accuracy_rf}")
 print(f"Gradient Boosting Machine (XGBoost) Accuracy: {accuracy_xgb}")
