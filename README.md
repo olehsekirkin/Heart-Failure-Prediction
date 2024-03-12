@@ -56,10 +56,10 @@ This rigorous approach allows me to compare the predictive power of each algorit
 ### Part 3: Results and Discussion
 The evaluation of my models yielded the following accuracies:
 
-Logistic Regression Model Accuracy: 80%
-Random Forest Classifier Accuracy: 75%
-Gradient Boosting Classifier Accuracy: 73.33%
-Support Vector Machine Accuracy: 75%
+- Logistic Regression Model Accuracy: 80%
+- Random Forest Classifier Accuracy: 75%
+- Gradient Boosting Classifier Accuracy: 73.33%
+- Support Vector Machine Accuracy: 75%
 
 These results demonstrate the potential of Machine Learning in enhancing the prediction of heart failure mortality. The Random Forest Classifier emerged as the top-performing model, with an accuracy of 80%. This model's success can be attributed to its ability to handle the complexity and non-linearity within our dataset, providing a more nuanced understanding of the factors influencing heart failure mortality.
 
