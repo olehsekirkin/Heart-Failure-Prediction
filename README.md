@@ -61,6 +61,8 @@ The evaluation of my models yielded the following accuracies:
 - Gradient Boosting Classifier Accuracy: 73.33%
 - Support Vector Machine Accuracy: 75%
 
+With some hyperparameter tuning we can get the Logistic Regression Model up to 85.37%, but that is not enough! I will be looking into ways of improving this number to be over 90%, as this is the milestone I want this model to achieve.
+
 <p align="center">
   <img src="https://i.imgur.com/2RehOsS.png" alt="Title" width="750px" height="431px">
 </p>
