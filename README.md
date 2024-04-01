@@ -1,7 +1,7 @@
 # Heart-Failure-Prediction
 
 <p align="center">
-  <img src="https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/e163d977-3fe5-42da-b959-5b5319027458/machine-learning-in-healthcare.jpg" alt="Title" width="560px" height="249px">
+  <img src="https://images.squarespace-cdn.com/content/v1/5daddb33ee92bf44231c2fef/e163d977-3fe5-42da-b959-5b5319027458/machine-learning-in-healthcare.jpg" alt="Title" width="650px" height="249px">
 </p>
 
 Data analysis and Machine Learning approach to Heart Failure Prediction.
@@ -34,6 +34,10 @@ The dataset includes the next features (12 for prediction and DEATH_EVENT):
 
 ### Part 1: Data Preparation and Analysis
 
+<p align="center">
+  <img src="https://i.ytimg.com/vi/yOmxJbZjTnU/maxresdefault.jpg" alt="Title" width="300px" height="150px">
+</p>
+
 During this first phase of the project I will be performing several data cleaning queries through MySQL, addressing missing values, outliers and inconsistencies. Now that the data is ready I will enhance the dataset with the creation of new features that will further improve the model and finally create a pipeline that connects this new dataset to Python so I can perform an EDA (Exploratory Data Analysis) to uncover patterns and relationships.
 
 Analyzing the dataset through visualization will help uncover patterns, trends, and correlations among the features. This step is critical for understanding the factors that contribute most significantly to heart failure mortality.
@@ -41,6 +45,10 @@ Analyzing the dataset through visualization will help uncover patterns, trends, 
 Once important questions have been solved thanks to the visuals, we can start building our Heart Failure Prediction Model, thanks to the use of a cloud platform like Snowflake. First of all we have to pipeline our current data from MySQL to the cloud, I we will use code within the same file as before.
 
 ### Part 2: Machine Learning Model Development
+
+<p align="center">
+  <img src="https://datasense.be/wp-content/uploads/snowflake-cloud-data-warehouse-data-vault-e1639652727931.png" alt="Title" width="300px" height="90px">
+</p>
 
 In this phase, I focus on applying various Machine Learning algorithms to predict mortality due to heart failure. My approach involves utilizing a combination of Logistic Regression, Random Forest Classifier, Support Vector Machine (SVM), and XGBoost models.
 
