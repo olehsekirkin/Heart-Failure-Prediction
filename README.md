@@ -29,7 +29,7 @@ The dataset includes the next features (12 for prediction and DEATH_EVENT):
 - Smoking: Smoking status, a major cardiovascular risk factor.
 - Time: Duration of follow-up, essential for outcome analysis.
 - Death Event: Indicates if a heart failure mortality event occurred.
-
+  
 ## Project Structure
 
 ### Part 1: Data Preparation and Analysis
